@@ -1,0 +1,12 @@
+# Time complexity: O(n)
+# Space complexity: O(n) due to set creation
+
+from typing import List
+
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+      return len(set(nums)) < len(nums)
+
+if __name__ == "__main__":
+    s = Solution()
+    print(s.hasDuplicate([1, 2, 9, 15, 15]))
