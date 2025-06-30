@@ -48,3 +48,34 @@ Given an integer array `nums`, return `true` if any value appears more than once
   Check length -> Time: O(n); Space: O(n)
 
 ---
+
+### Q3. Valid Anagram
+
+Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
+
+An anagram is a string that contains the exact same characters as another string, but the order of characters can differ.
+
+Constraints:
+- `s` and `t` consist of lowercase English letters only.
+
+#### Java Solutions
+- [Anagram.java](./ArraysAndHashing/Java/ValidAnagram/Anagram.java)
+  HashMap frequency check -> Time: O(n + m); Space: O(1)
+
+- [AnagramOptimizedSpace.java](./ArraysAndHashing/Java/ValidAnagram/AnagramOptimizedSpace.java)
+  Fixed-size array (26 letters) -> Time: O(n); Space: O(1)
+
+- [AnagramSortedStrings.java](./ArraysAndHashing/Java/ValidAnagram/AnagramSortedStrings.java)
+  Sort and compare -> Time: O(n log n + m log m); Space: O(n + m)
+
+#### Python Solutions
+- [anagram_hash_maps.py](./ArraysAndHashing/Python/ValidAnagram/anagram_hash_maps.py)
+  Hash map approach -> Time: O(n + m); Space: O(1)
+
+- [anagram_optimized_space.py](./ArraysAndHashing/Python/ValidAnagram/anagram_optimized_space.py)
+  Fixed-size array (26 letters) -> Time: O(n); Space: O(1)
+
+- [anagram_sorted_strings.py](./ArraysAndHashing/Python/ValidAnagram/anagram_sorted_strings.py)
+  Sort and compare -> Time: O(n log n + m log m); Space: O(n + m)
+
+---
