@@ -36,7 +36,7 @@ public class TwoSumTwoPtr {
         right--;
       }
     }
-    return new int[0];
+    return new int[0]; // could also be new int[] {}
   }
 
   private static int[][] populateMatrix(int[] nums) {

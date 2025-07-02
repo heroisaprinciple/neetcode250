@@ -79,3 +79,31 @@ Constraints:
   Sort and compare -> Time: O(n log n + m log m); Space: O(n + m)
 
 ---
+
+### Q4. Two Sum
+
+Given an array of integers `nums` and an integer `target`, return the indices `i` and `j` such that `nums[i] + nums[j] == target` and `i != j`.
+
+You may assume that every input has exactly one solution.
+
+Return the answer with the **smaller index first**.
+
+#### Java Solutions
+- [TwoSumBruteForce.java](./ArraysAndHashing/Java/TwoSum/TwoSumBruteForce.java)
+  Nested loops -> Time: O(n²); Space: O(1)
+
+- [TwoSumHashmap.java](./ArraysAndHashing/Java/TwoSum/TwoSumHashmap.java)
+  HashMap lookup -> Time: O(n); Space: O(n)
+
+- [TwoSumTwoPtr.java](./ArraysAndHashing/Java/TwoSum/TwoSumTwoPtr.java)
+  Sort + two pointers -> Time: O(n log n); Space: O(n)
+
+#### Python Solutions
+- [two_sum_hashmap.py](./ArraysAndHashing/Python/TwoSum/two_sum_hashmap.py)
+  HashMap lookup -> Time: O(n); Space: O(n)
+
+- [two_sum_sort.py](./ArraysAndHashing/Python/TwoSum/two_sum_sort.py)
+  Sort + two pointers -> Time: O(n log n); Space: O(n)
+
+
+---
