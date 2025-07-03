@@ -1,0 +1,40 @@
+/*
+ * A sorting approach, where only the first and last strings after sorting are compared.
+ * Time complexity:
+ * - Average case: O(n * m log n)
+ *   - Worst case: O(n * m log n)
+ *     where:
+ *       n = number of strings in the array
+ *       m = length of the LONGEST string
+ *
+ * Space complexity: O(n) =>
+ * - Arrays.sort in Java typically uses auxiliary space
+ * - proportional to the number of elements n to store references during the sort
+ * - operation
+ */
+
+package Java.LongestCommonPrefix;
+
+import java.util.Arrays;
+
+public class LongestCommonPrefSort {
+  public static String commonPrefix(String[] strs) {
+    if (strs.length == 0)
+      return "";
+    Arrays.sort(strs); // O(n * m log n)
+    String first = strs[0];
+    String last = strs[strs.length - 1];
+    int i = 0;
+
+    while (i < first.length() && i < last.length() &&
+        first.charAt(i) == last.charAt(i)) {
+      i++;
+    }
+    return first.substring(0, i);
+  }
+
+  public static void main(String[] args) {
+    String[] strs = { "bat", "bag", "bank", "band" };
+    System.out.println(commonPrefix(strs));
+  }
+}
