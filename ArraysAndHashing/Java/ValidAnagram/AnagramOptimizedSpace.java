@@ -1,6 +1,16 @@
 /*
  * Time complexity: O(n)
- * Space complexity:  O(1)
+ *
+ * Space complexity:
+ * - Output: O(1) - only a boolean is returned
+ * - Auxiliary: O(1) - fixed-size int[26] array, since only lowercase English letters are used
+ * - Total: O(1)
+ *
+ * The logic:
+ * We use a fixed-size array of 26 integers to store the difference in letter counts between s and t.
+ * We increment for each letter in s, decrement for each letter in t.
+ * At the end, if all counts are zero, s and t are anagrams.
+ * All extra space used is constant (does not grow with input size).
  */
 
 package Java.ValidAnagram;

@@ -1,6 +1,17 @@
 /*
  * Time complexity: O(n log n + m log m)
- * Space complexity: O(n + m)
+ *   - Sorting s: O(n log n)
+ *   - Sorting t: O(m log m)
+ *
+ * Space complexity:
+ * - Output: O(1) - only a boolean is returned
+ * - Auxiliary: O(n + m) - two new char arrays are created for sorting (copies of s and t)
+ * - Total: O(n + m)
+ *
+ * The logic:
+ * We convert both strings to character arrays, sort them, and compare for equality.
+ * Sorting requires O(n + m) extra space for the two arrays.
+ * Only the auxiliary space for the arrays grows with input size.
  */
 
 package Java.ValidAnagram;

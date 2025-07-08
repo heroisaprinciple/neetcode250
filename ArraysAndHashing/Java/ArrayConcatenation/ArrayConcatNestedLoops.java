@@ -1,6 +1,15 @@
 /*
- * Time compelxity: O(n)
- * Space complexity: O(2 * n) => O(n)
+ * Time complexity: O(n)
+ *
+ * Space complexity:
+ * - Output: O(2 * n) - output array of length 2 * n is returned
+ * - Auxiliary: O(1) - only constant extra variables (n, idx, i, etc.)
+ * - Total: O(2n) => O(n)
+ *
+ * The logic:
+ * We create a new array `ans` of size 2 * n and fill it with two copies of the input array,
+ * using nested loops for demonstration.
+ * No extra data structures are used except for the output array.
  */
 
 package Java.ArrayConcatenation;

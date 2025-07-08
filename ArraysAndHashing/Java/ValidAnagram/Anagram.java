@@ -1,7 +1,19 @@
 /*
  * Time complexity: O(n + m)
- * Space complexity: O(1) because of "s and t consist of lowercase English letters."
- * With Unicode chars, it could be O(n)
+ *   - O(n) to build the frequency map for s
+ *   - O(m) to validate t against the frequency map
+ *
+ * Space complexity:
+ * - Output: O(1) - only a boolean is returned
+ * - Auxiliary: O(1) - since "s and t consist of lowercase English letters", the HashMap can store at most 26 keys (constant)
+ *     - With Unicode characters, it could be O(n)
+ * - Total: O(1) (for English letters)
+ *
+ * The logic:
+ * We build a HashMap of character counts from string s.
+ * Then we scan t, decreasing the count in the map for each character.
+ * If any count becomes negative or a char is missing, return false.
+ * Only the HashMap grows, but for English letters the space is constant (max 26).
  */
 
 package Java.ValidAnagram;

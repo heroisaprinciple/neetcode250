@@ -1,9 +1,17 @@
 /*
- * Time complexity: O(n) + O(n) => O(n)
- * .distinct() leads to linear time as it has internal loop
- * same goes for .count()
+ * Time complexity: O(n)
+ *   - .distinct() is O(n) (uses a HashSet internally)
+ *   - .count() is O(n), but both loops are sequential so total is O(n)
  *
- * Space complexity: O(n) due to hashset creation with .distinct()
+ * Space complexity:
+ * - Output: O(1) - only a boolean is returned
+ * - Auxiliary: O(n) - a HashSet is used internally by .distinct() to store unique elements
+ * - Total: O(n)
+ *
+ * The logic:
+ * We use Java Streams .distinct() to collect unique elements (using a HashSet internally).
+ * If the count of distinct elements is less than the length of the input,
+ * there is a duplicate.
  */
 
 package Java.ContainsDuplicate;

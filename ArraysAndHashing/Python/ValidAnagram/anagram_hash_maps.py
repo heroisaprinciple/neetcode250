@@ -1,5 +1,18 @@
-# Time complexity: O(n + m)
-# Space complexity: O(1)
+'''
+Time complexity: O(n + m)
+
+Space complexity:
+- Output: O(1) - only a boolean is returned
+- Auxiliary: O(n) - a dictionary may store up to n unique characters from s
+  (If the alphabet is fixed, e.g., lowercase English, auxiliary is O(1))
+- Total: O(n)
+
+The logic:
+We build a frequency dictionary from s, counting occurrences of each character.
+For each character in t, we decrement the count in freq.
+If a character is missing or its count drops below zero, return False.
+Only the dictionary grows with the input size; output is just a boolean.
+'''
 
 class Solution:
   def isAnagram(self, s: str, t: str) -> bool:

@@ -1,11 +1,16 @@
 /*
- * Time complexity:  O(n)
- * Space complexity: O(n) -> hashmap creation
+ * Time complexity: O(n)
  *
- * A HashMap is used to store numbers and their indices from the array.
- * 1) For each number, the difference (target - current number) is calculated.
- * 2) If this difference exists in the HashMap, we have found a valid pair and return their indices.
- * 3) Otherwise, we add the current number and its index to the HashMap.
+ * Space complexity:
+ * - Output: O(1) - only a fixed-size int array (length 2 or 0) is returned
+ * - Auxiliary: O(n) - a HashMap stores up to n elements (number-to-index mapping)
+ * - Total: O(n)
+ *
+ * The logic:
+ * We use a HashMap to store numbers and their indices as we iterate through the array.
+ * For each number, we check if (target - number) exists in the HashMap.
+ * If it does, we return their indices. If not, we store the current number and its index.
+ * Only the HashMap (auxiliary) grows with input size; the output is always a fixed-size array.
  */
 
 package Java.TwoSum;

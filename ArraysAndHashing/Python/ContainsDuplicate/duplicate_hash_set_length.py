@@ -1,5 +1,18 @@
-# Time complexity: O(n)
-# Space complexity: O(n) due to set creation
+'''
+ * Time complexity: O(n)
+ *   - set(nums) is O(n) (builds a hash set)
+ *   - len() checks are O(1)
+ *
+ * Space complexity:
+ * - Output: O(1) - only a boolean is returned
+ * - Auxiliary: O(n) - a set is created to store unique elements
+ * - Total: O(n)
+ *
+ * The logic:
+ * We use Python's set to collect unique elements.
+ * If the number of unique elements is less than the length of the input,
+ * there is a duplicate.
+'''
 
 from typing import List
 

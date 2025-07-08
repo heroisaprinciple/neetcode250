@@ -1,6 +1,9 @@
 /*
  * Time complexity: O(n log n) -> advanced sort algo
- * Space complexity: O(n) -> matrix is created
+ * Space complexity:
+ * - Output: O(1) - only a fixed-size int array (length 2 or 0) is returned
+ * - Auxiliary: O(n) - a matrix of size n * 2 is created to store original values and indices
+ * - Total: O(n)
  *
  * A two-pointer approach. A matrix of values and corresponding indices
  * is created to store original positions.

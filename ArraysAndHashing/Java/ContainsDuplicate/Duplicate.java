@@ -1,6 +1,14 @@
 /*
  * Time complexity: O(n)
- * Space complexity: O(n) due to hashmap creation
+ *
+ * Space complexity:
+ * - Output: O(1) - only a boolean is returned
+ * - Auxiliary: O(n) - due to the HashMap storing up to n elements (in worst case, all unique)
+ * - Total: O(n)
+ *
+ * The logic:
+ * We use a HashMap to track the frequency of each number as we iterate through the input.
+ * If we see a duplicate, we return true immediately. Otherwise, we return false at the end.
  */
 
 package Java.ContainsDuplicate;
