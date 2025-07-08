@@ -7,10 +7,12 @@
  *       n = number of strings in the array
  *       m = length of the LONGEST string
  *
- * Space complexity: O(n) =>
- * - Arrays.sort in Java typically uses auxiliary space
- * - proportional to the number of elements n to store references during the sort
- * - operation
+ * Space complexity:
+ * Output space: O(k)
+ * - k as the new string is created with substr (not m as it is not the longest one)
+ *
+ * Auxiliary space: O(n) => from sorting
+ * Total: O(n + k)
  */
 
 package Java.LongestCommonPrefix;

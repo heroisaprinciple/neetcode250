@@ -2,7 +2,12 @@
  * Time complexity: O(n * m log n), where:
  *  - n = length of the strs array
  *  - m = length of the LONGEST word
- * Space complexity: O(n * m)
+ *
+ * Space complexity:
+ * - Output space: O(n) => n references to input strings
+ * - (not n * m as we are not copying them)
+ * - Auxiliary space: O(n * m) => up to n, each m long in hashmap
+ * - Total: O(n * m)
  *
  * The logic:
  * Each sorted word is a key in the hashmap, and the original words

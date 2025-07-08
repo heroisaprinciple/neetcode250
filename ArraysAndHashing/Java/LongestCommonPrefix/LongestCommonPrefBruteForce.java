@@ -13,9 +13,13 @@
  *   Each call to indexOf(prefix) and substring(...) takes up to O(m),
  *   and we may perform up to m such operations per string in the worst case.
  *
- * Space complexity: O(m)
+ * Space complexity:
  *   - We store the prefix string, which in the worst case starts at length m and shrinks.
  *   - Since Java strings are immutable, each substring operation creates a new string.
+ *   Output space: O(k)
+ *   - k as the new str is created
+ *   Auxiliary: O(m)
+ *  Total: O(k + m)
  *
  * The logic is that:
  * If a word does not start with the current prefix,

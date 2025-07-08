@@ -107,3 +107,54 @@ Return the answer with the **smaller index first**.
 
 
 ---
+
+### Q5. Longest Common Prefix
+
+You are given an array of strings `strs`. Return the longest common prefix of all the strings.
+
+If there is no common prefix, return an empty string `""`.
+
+#### Java Solutions
+
+- [LongestCommonPrefBruteForce.java](./ArraysAndHashing/Java/LongestCommonPrefix/LongestCommonPrefBruteForce.java)
+  Brute-force horizontal scanning -> Time: O(n × m) average, O(n × m²) worst; Space: O(m + k)
+
+- [LongestCommonPrefVerticalScanning.java](./ArraysAndHashing/Java/LongestCommonPrefix/LongestCommonPrefVerticalScanning.java)
+  Vertical scanning -> Time: O(n × m); Space: O(k)
+
+- [LongestCommonPrefSort.java](./ArraysAndHashing/Java/LongestCommonPrefix/LongestCommonPrefSort.java)
+  Sort and compare first/last -> Time: O(n × m log n); Space: O(n + k)
+
+#### Python Solutions
+
+- [vertical_scanning.py](./ArraysAndHashing/Python/LongestCommonPrefix/vertical_scanning.py)
+  Vertical scanning → Time: O(n × m); Space: O(k)
+
+- [sort_approach.py](./ArraysAndHashing/Python/LongestCommonPrefix/sort_approach.py)
+  Sort and compare → Time: O(n × m log n); Space: O(n + k)
+
+---
+
+### Q6. Group Anagrams
+
+Given an array of strings `strs`, group all anagrams together into sublists. You may return the output in any order.
+
+An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different.
+
+#### Java Solutions
+
+- [GroupAnagrams.java](./ArraysAndHashing/Java/GroupAnagrams/GroupAnagrams.java)
+  Brute-force/sort-based approach -> Time: O(n * m log n); Space: O(n * m)
+
+- [GroupAnagramsOptimized.java](./ArraysAndHashing/Java/GroupAnagrams/GroupAnagramsOptimized.java)
+  Frequency-array optimized approach -> Time: O(n * m); Space: O(n)
+
+#### Python Solutions
+
+- [sort_approach.py](./ArraysAndHashing/Python/GroupAnagrams/sort_approach.py)
+  Sort-based approach -> Time: O(n * m log n); Space: O(n * m)
+
+- [optimized_approach.py](./ArraysAndHashing/Python/GroupAnagrams/optimized_approach.py)
+  Frequency-array optimized approach -> Time: O(n * m); Space: O(n)
+
+---

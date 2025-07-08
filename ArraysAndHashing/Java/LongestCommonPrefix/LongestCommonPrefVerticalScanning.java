@@ -8,7 +8,12 @@
  *       n = number of strings in the array
  *       m = length of the SHORTEST string
  *
- * Space complexity: O(1)
+ * Space complexity:
+ * Output space: O(k)
+ * - k as the new str is created with substr
+ *
+ * Auxiliary: O(1)
+ * Total: O(k)
  */
 
 package Java.LongestCommonPrefix;

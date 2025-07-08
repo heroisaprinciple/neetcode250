@@ -2,7 +2,14 @@
  * Time complexity: O(n * m), where:
  *  - n = length of the strs array
  *  - m = length of the LONGEST word
- * Space complexity: O(n * m)
+ *
+ * Space complexity:
+ * - Output: O(n) => only referencing input strings
+ * - Auxiliary: O(n * k), where:
+ *  - k = length of the key string for the frequency array (fixed, e.g., 26*4=104 for "[0, 1, 0, ...]")
+ *  - Since 26 is constant, k = O(1) in practice
+ *  - So overall auxiliary space is O(n)
+ * - Total: O(n)
  *
  * The logic:
  * Each word is converted into a freq array of 26 integers
