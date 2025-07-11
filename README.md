@@ -158,3 +158,28 @@ An anagram is a string that contains the exact same characters as another string
   Frequency-array optimized approach -> Time: O(n * m); Space: O(n)
 
 ---
+
+
+### Q7. Remove Element
+
+You are given an integer array `nums` and an integer `val`. Your task is to remove all occurrences of `val` from `nums` **in-place**.
+
+After removing all occurrences of `val`, return the number of remaining elements, say `k`, such that the first `k` elements of `nums` do not contain `val`.
+
+````
+Input: nums = [0,1,2,2,3,0,4,2], val = 2
+
+Output: [0,1,3,0,4]
+````
+
+#### Java Solution
+
+- [RemoveEl.java](./ArraysAndHashing/Java/RemoveElement/RemoveEl.java)
+  Two-pointer approach → Time: O(n); Space: O(1)
+
+#### Python Solution
+
+- [remove_element.py](./ArraysAndHashing/Python/RemoveElement/remove_element.py)
+  Two-pointer approach → Time: O(n); Space: O(1)
+
+-----

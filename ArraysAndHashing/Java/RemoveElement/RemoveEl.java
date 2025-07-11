@@ -1,5 +1,5 @@
 /*
- * A two pointer problem.
+ * A two pointers problem.
  *
  * Time complexity: O(n)
  * Space complexity:
@@ -14,8 +14,6 @@
  */
 
 package Java.RemoveElement;
-
-import java.util.stream.IntStream;
 
 class Solution {
   public static int removeElement(int[] nums, int val) {
