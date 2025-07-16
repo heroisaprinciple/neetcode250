@@ -183,3 +183,42 @@ Output: [0,1,3,0,4]
   Two-pointer approach → Time: O(n); Space: O(1)
 
 -----
+
+### Q8. Majority Element
+
+Given an array nums of size n, return the majority element.
+
+The majority element is the element that appears more than ⌊n / 2⌋ times in the array. You may assume that the majority element always exists in the array.
+
+````
+Input: nums = [5,5,1,1,1,5,5]
+
+Output: 5
+````
+
+#### Java Solutions
+
+- [MajorityElMooreVoting.java](./ArraysAndHashing/Java/MajorityElement/MajorityElMooreVoting.java)
+  Moore's Voting Algo -> Time: O(n), Space: O(1).
+
+- [MajorityElBitwise.java](./ArraysAndHashing/Java/MajorityElement/MajorityElBitwise.java)
+  Bitwise Counting Approach -> Time: O(n), Space: O(1).
+
+- [MajorityElHashMap.java](./ArraysAndHashing/Java/MajorityElement/MajorityElHashMap.java)
+  HashMap Frequency Count -> Time: O(n), Space: O(n).
+
+- [MajorityElHashMapBasic.java](./ArraysAndHashing/Java/MajorityElement/MajorityElHashMapBasic.java)
+  Basic HashMap frequency implementation -> Time: O(n), Space: O(n).
+
+- [MajorityElSort.java](./ArraysAndHashing/Java/MajorityElement/MajorityElSort.java)
+  Sorting Approach -> Time: O(n log n), Space: O(n)
+
+#### Python Solutions
+
+- [majority_el_bitwise.py](./ArraysAndHashing/Python/MajorityElement/majority_el_bitwise.py)
+  Bitwise Counting Approach -> Time: O(n), Space: O(1).
+
+- [majority_el_hashmaps.py](./ArraysAndHashing/Python/MajorityElement/majority_el_hashmaps.py)
+  HashMap Frequency Count -> Time: O(n), Space: O(n).
+
+---
