@@ -222,3 +222,28 @@ Output: 5
   HashMap Frequency Count -> Time: O(n), Space: O(n).
 
 ---
+
+### Q9. Implement Hahset
+
+Design a HashSet without using any built-in hash table libraries.
+
+Implement MyHashSet class:
+
+````
+void add(key) Inserts the value key into the HashSet.
+bool contains(key) Returns whether the value key exists in the HashSet or not.
+void remove(key) Removes the value key in the HashSet. If key does not exist in the HashSet, do nothing.
+````
+
+#### Java Solutions
+
+- [MyHashSet.java](./ArraysAndHashing/Java/DesignHashset/MyHashSet.java)
+  Brute-Force Solution -> Time: O(n), Space: O(n).
+
+- [MyHashSetLinkedLists.java](./ArraysAndHashing/Java/DesignHashset/MyHashSetLinkedList.java)
+  A Linked List Solution -> Time: O(n / k), Space: O(m + k);
+  - n -> total num of keys
+  - k -> the size of set
+  - m -> the num of unique keys
+
+---
