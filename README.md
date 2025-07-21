@@ -246,4 +246,39 @@ void remove(key) Removes the value key in the HashSet. If key does not exist in 
   - k -> the size of set
   - m -> the num of unique keys
 
+**Insight: Always ask interviewer if ArrayList<LinkedList<Integer>> is allowed to use.
+Otherwise -> do linked lists from scratch.**
+
 ---
+
+### Q10. Implement HashMap
+
+Design a HashMap without using any built-in hash table libraries.
+Implement the MyHashMap class:
+
+````
+MyHashMap() initializes the object with an empty map.
+
+void put(int key, int value) inserts a (key, value) pair into the HashMap. If the key already exists in the map, update the corresponding value.
+
+int get(int key) returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key.
+
+void remove(key) removes the key and its corresponding value if the map contains the mapping for the key.
+````
+
+#### Java Solutions
+
+- [MyHashMapLinkedLists.java](./ArraysAndHashing/Java/DesignHashmap/MyHashMapLinkedLists.java)
+  A Linked List Solution (int keys/values) -> Time: O(n / k) avg, O(n) worst; Space: O(m + k)
+  - n -> total num of keys
+  - k -> the size of buckets arr
+  - m -> the num of unique keys
+
+- [MyHashMapGenerics.java](./ArraysAndHashing/Java/DesignHashmap/MyHashMapGenerics.java)
+  A Linked List Solution (Generic K, V) -> Time: O(n / k) avg, O(n) worst; Space: O(m + k)
+  - n -> total num of keys
+  - k -> the size of buckets arr
+  - m -> the num of unique keys
+  - Supports `null` keys/values
+
+```
