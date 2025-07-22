@@ -281,4 +281,32 @@ void remove(key) removes the key and its corresponding value if the map contains
   - m -> the num of unique keys
   - Supports `null` keys/values
 
-```
+---
+
+### Q11. Sort An Array
+
+You are given an array of integers nums, sort the array in ascending order and return it.
+
+You must solve the problem without using any built-in functions in O(nlog(n)) time complexity and with the smallest space complexity possible.
+
+````
+Example 1:
+
+Input: nums = [10,9,1,1,1,2,3,1]
+
+Output: [1,1,1,1,2,3,9,10]
+````
+
+This solution uses Hoare partitioning.
+
+#### Java Solution
+- [SortAnArrayQuickSort.java](./ArraysAndHashing/Java/SortAnArray/SortAnArrayQuickSort.java)
+   A QuickSort implementation ->
+   Time: O(n log n) average, O(n^2) worst;
+   Space: O(log n) average, O(n) worst.
+
+
+**A key insight: use median partition and always ask an interviewer for details.**
+The link to the [manual.](https://drive.google.com/file/d/1cyeQi6BtoKCWTnzS6JwUIptBbGHahQ7T/view?usp=sharing)
+
+---

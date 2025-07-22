@@ -55,7 +55,10 @@ public class MyHashMapGenerics<K, V> {
   }
 
   public void put(K key, V value) {
-    Node<K, V> prev = buckets[computeHash(key)]; // works because key is int
+    // would not work here because k is of type K
+    // Node<K, V> current = buckets[key % this.n].next;
+    // a special function is needed
+    Node<K, V> prev = buckets[computeHash(key)];
     Node<K, V> current = prev.next;
 
     while (current != null) {
@@ -73,9 +76,6 @@ public class MyHashMapGenerics<K, V> {
   }
 
   public V get(K key) {
-    // would not work here because k is of type K
-    // Node<K, V> current = buckets[key % this.n].next;
-    // a special function is needed
     Node<K, V> current = buckets[computeHash(key)].next;
 
     while (current != null) {
@@ -88,7 +88,7 @@ public class MyHashMapGenerics<K, V> {
   }
 
   public void remove(K key) {
-    Node<K, V> prev = buckets[computeHash(key)]; // works because key is int
+    Node<K, V> prev = buckets[computeHash(key)];
     Node<K, V> current = prev.next;
 
     while (current != null) {
