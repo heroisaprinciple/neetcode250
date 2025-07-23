@@ -133,6 +133,8 @@ If there is no common prefix, return an empty string `""`.
 - [sort_approach.py](./ArraysAndHashing/Python/LongestCommonPrefix/sort_approach.py)
   Sort and compare → Time: O(n × m log n); Space: O(n + k)
 
+The link to the manual for the vertical screening [solution.](https://drive.google.com/file/d/10KCKNX-Lw6HgfXABcBhTIDV1GLBy_gw-/view?usp=sharing)
+
 ---
 
 ### Q6. Group Anagrams
@@ -200,6 +202,7 @@ Output: 5
 
 - [MajorityElMooreVoting.java](./ArraysAndHashing/Java/MajorityElement/MajorityElMooreVoting.java)
   Moore's Voting Algo -> Time: O(n), Space: O(1).
+  The link to the [manual.](https://drive.google.com/file/d/1iRZ8LOjcMmCltP-ZCrsLiUJTlAmRjMYq/view?usp=sharing)
 
 - [MajorityElBitwise.java](./ArraysAndHashing/Java/MajorityElement/MajorityElBitwise.java)
   Bitwise Counting Approach -> Time: O(n), Space: O(1).
@@ -305,8 +308,16 @@ This solution uses Hoare partitioning.
    Time: O(n log n) average, O(n^2) worst;
    Space: O(log n) average, O(n) worst.
 
-
 **A key insight: use median partition and always ask an interviewer for details.**
 The link to the [manual.](https://drive.google.com/file/d/1cyeQi6BtoKCWTnzS6JwUIptBbGHahQ7T/view?usp=sharing)
+
+#### Python Solution
+- [shell_sort.py](./ArraysAndHashing/Python/SortAnArray/shell_sort.py)
+   A Shell Sort implementation ->
+   Time: O(n log n) average, O(n^2) worst;
+   Space: O(n)
+
+**A key insight: time complexity depends on the gap.**
+The link to the [manual.](https://drive.google.com/file/d/1AmLOVDIv5LLBmKLVA9v9U8ErO97T_HWJ/view?usp=sharing)
 
 ---
