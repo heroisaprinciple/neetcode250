@@ -4,8 +4,15 @@
  * - The worst case: O(n^2) if the array is sorted
  *
  * Space complexity:
- * - The average case: O(log n) -> due to recursive call stack
- * - The worst case: O(n) if the array is sorted -> the tree is unbalanced
+ * - The average case:
+ *   - Auxiliary: O(log n) -> due to recursive call stack
+ *   - Output: O(n)
+ *   - Total: O(log n) + O(n) -> O(n)
+ *
+ * - The worst case (if the array is sorted -> the tree is unbalanced):
+ *   - Auxiliary: O(n)
+ *   - Output: O(n)
+ *   - Total: O(n) + O(n) -> O(n)
  *
  * The logic:
  * An ordinary quicksort implementation, which uses Hoare partitioning.

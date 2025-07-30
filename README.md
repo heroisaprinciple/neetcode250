@@ -321,3 +321,30 @@ The link to the [manual.](https://drive.google.com/file/d/1cyeQi6BtoKCWTnzS6JwUI
 The link to the [manual.](https://drive.google.com/file/d/1AmLOVDIv5LLBmKLVA9v9U8ErO97T_HWJ/view?usp=sharing)
 
 ---
+
+### Q12. Sort Colors
+
+You are given an array nums consisting of n elements where each element is an integer representing a color:
+
+````
+0 represents red
+1 represents white
+2 represents blue
+````
+Your task is to sort the array in-place such that elements of the same color are grouped together and arranged in the order: red (0), white (1), and then blue (2).
+
+#### Java Solutions
+- [CountingSort.java](./ArraysAndHashing/Java/SortColours/CountingSort.java)
+  A Counting Sort implementation -> Time: O(n + k) for all cases; Space: O(1)
+  - n -> the size of nums array
+  - k -> the size of count array
+
+- [ThreePtrs.java](./ArraysAndHashing/Java/SortColours/ThreePtrs.java)
+  A three pointer implementaion (True One Pass Algo) -> Time: O(n) for all cases; Space: O(1)
+
+**A key insight: always clarify the meaning of 'one-pass'.**
+Manuals:
+- [Counting Sort.](https://drive.google.com/file/d/14nrjL05J2tuDcuOLEG8TrlCJVMXsRO51/view?usp=sharing)
+- [SortColours.](https://drive.google.com/file/d/1JEEwuTMfJHZ9XiutKTY2ucwaKqDac32i/view?usp=sharing)
+
+----
