@@ -348,3 +348,34 @@ Manuals:
 - [SortColours.](https://drive.google.com/file/d/1JEEwuTMfJHZ9XiutKTY2ucwaKqDac32i/view?usp=sharing)
 
 ----
+
+### Q13. Top K Frequent Elements
+
+#### Java Solutions
+
+Given an integer array nums and an integer k, return the k most frequent elements within the array.
+
+The test cases are generated such that the answer is always unique.
+
+You may return the output in any order.
+
+````
+Example 1:
+
+Input: nums = [1,2,2,3,3,3], k = 2
+
+Output: [2,3]
+````
+
+- [BucketSort.java](./ArraysAndHashing/Java/TopKFrequentEls/BucketSort.java)
+  A Bucket Sort implementation -> Time: O(n) for all cases, Space: O(n)
+
+  Manuals:
+
+  - [TopKFrequentEls.](https://drive.google.com/file/d/1Bw-o4ESsdK9nujl54fdSb7WRFTPoiPmS/view?usp=sharing)
+  - [Bucket Sort.](https://drive.google.com/file/d/11Ya43IySygBdHXAJROxttGvAL0g2cuht/view?usp=sharing)
+
+**A key insight: when the problem suggests sorting and using nested arrays or lists,
+the bucket sort could be the answer; + linear time.
+Though Radix Sort is a cousin of Bucket Sort, here we need nested structures and
+a uniform distribution, unlike Radix Sort, which requires a base.**
