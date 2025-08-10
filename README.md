@@ -379,3 +379,29 @@ Output: [2,3]
 the bucket sort could be the answer; + linear time.
 Though Radix Sort is a cousin of Bucket Sort, here we need nested structures and
 a uniform distribution, unlike Radix Sort, which requires a base.**
+
+-----------
+
+### Q14. Encode and Decode String
+
+````
+Design an algorithm to encode a list of strings to a single string. The encoded string is then decoded back to the original list of strings.
+Please implement encode and decode.
+````
+
+#### Java Solution
+
+- [Codec.java](./ArraysAndHashing/Java/EncodeAndDecodeStrings/Codec.java)
+  Time: O(m); Space: O(m + n)
+   - m -> the number of characters in all strings
+   - n -> the number of strings
+
+#### Python Solution
+- [codec.py](./ArraysAndHashing/Python/EncodeAndDecodeStrings/codec.py)
+  Time: O(m); Space: O(m + n)
+   - m -> the number of characters in all strings
+   - n -> the number of strings
+
+The link to the [manual.](https://drive.google.com/file/d/16qcUQgmjoVuIWlz1gRQc1BMHUQx7U5x7/view?usp=sharing)
+
+How different data types work with StringBuilder: [table](https://docs.google.com/spreadsheets/d/1vjAOU2VMiWG405a6bMV2rgkSq7c1XFCxFrCoof678rg/edit?usp=sharing).
