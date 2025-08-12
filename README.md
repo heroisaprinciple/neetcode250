@@ -405,3 +405,38 @@ Please implement encode and decode.
 The link to the [manual.](https://drive.google.com/file/d/16qcUQgmjoVuIWlz1gRQc1BMHUQx7U5x7/view?usp=sharing)
 
 How different data types work with StringBuilder: [table](https://docs.google.com/spreadsheets/d/1vjAOU2VMiWG405a6bMV2rgkSq7c1XFCxFrCoof678rg/edit?usp=sharing).
+
+### Q15. Range Sum Query 2D Immutable
+
+Implement the NumMatrix class:
+
+```NumMatrix(int[][] matrix)``` Initializes the object with the integer matrix matrix.
+
+```int sumRegion(int row1, int col1, int row2, int col2)``` Returns the sum of the elements of matrix inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
+
+You must design an algorithm where sumRegion works on O(1) time complexity.
+
+````
+Input: ["NumMatrix", "sumRegion", "sumRegion", "sumRegion"]
+[[[[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]], [2, 1, 4, 3], [1, 1, 2, 2], [1, 2, 2, 4]]
+
+Output: [null, 8, 11, 12]
+````
+
+#### Java Solutions
+
+- [BruteForce.java](ArraysAndHashing/Java/RangeSumQuery2DImmutable/BruteForce.java)
+  Time: O(n * m); Space: O(1),
+    - n is the n or rows;
+    - m is the n of columns;
+
+- [2DPrefixSum.java](ArraysAndHashing/Java/RangeSumQuery2DImmutable/2DPrefixSum.java)
+  Time: O(1); Space: O(n * m), where:
+    - n is the n of rows;
+    - m is the n of cols;
+
+The link to the [manual.](https://drive.google.com/file/d/1l28laex4JQ2bIjpKxOF7EHOvvJae7478/view?usp=sharing)
+
+**A key insight: always think if the matrix can be precomputed.**
+
+-----
