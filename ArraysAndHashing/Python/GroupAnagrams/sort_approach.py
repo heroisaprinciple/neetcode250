@@ -1,7 +1,12 @@
 '''
- * Time complexity: O(n * m log n), where:
+ * Time complexity: O(n * m log m), where:
  *  - n = length of the strs array
  *  - m = length of the LONGEST word
+ * Since we have an array of strings that don't have equal length,
+ * the time complexity will be O(n * m log m), where m is the length of
+ * the longest string; .sort() depends of the length of the
+ * string, so we are using the longest one.
+
  * Space complexity:
  * - Output space: O(n) => n references to input strings
  * - (not n * m as we are not copying them)

@@ -146,7 +146,7 @@ An anagram is a string that contains the exact same characters as another string
 #### Java Solutions
 
 - [GroupAnagrams.java](./ArraysAndHashing/Java/GroupAnagrams/GroupAnagrams.java)
-  Brute-force/sort-based approach -> Time: O(n * m log n); Space: O(n * m)
+  Brute-force/sort-based approach -> Time: O(n * m log m); Space: O(n * m)
 
 - [GroupAnagramsOptimized.java](./ArraysAndHashing/Java/GroupAnagrams/GroupAnagramsOptimized.java)
   Frequency-array optimized approach -> Time: O(n * m); Space: O(n)
@@ -154,7 +154,7 @@ An anagram is a string that contains the exact same characters as another string
 #### Python Solutions
 
 - [sort_approach.py](./ArraysAndHashing/Python/GroupAnagrams/sort_approach.py)
-  Sort-based approach -> Time: O(n * m log n); Space: O(n * m)
+  Sort-based approach -> Time: O(n * m log m); Space: O(n * m)
 
 - [optimized_approach.py](./ArraysAndHashing/Python/GroupAnagrams/optimized_approach.py)
   Frequency-array optimized approach -> Time: O(n * m); Space: O(n)
@@ -226,7 +226,7 @@ Output: 5
 
 ---
 
-### Q9. Implement Hahset
+### Q9. Implement Hashset
 
 Design a HashSet without using any built-in hash table libraries.
 
@@ -351,8 +351,6 @@ Manuals:
 
 ### Q13. Top K Frequent Elements
 
-#### Java Solutions
-
 Given an integer array nums and an integer k, return the k most frequent elements within the array.
 
 The test cases are generated such that the answer is always unique.
@@ -366,6 +364,8 @@ Input: nums = [1,2,2,3,3,3], k = 2
 
 Output: [2,3]
 ````
+
+#### Java Solutions
 
 - [BucketSort.java](./ArraysAndHashing/Java/TopKFrequentEls/BucketSort.java)
   A Bucket Sort implementation -> Time: O(n) for all cases, Space: O(n)
@@ -440,3 +440,34 @@ The link to the [manual.](https://drive.google.com/file/d/1l28laex4JQ2bIjpKxOF7E
 **A key insight: always think if the matrix can be precomputed.**
 
 -----
+
+### Q16. Products of Array Except Self
+
+Given an integer array nums, return an array output where ```output[i]```
+is the product of all the elements of nums except ```nums[i]```.
+
+Each product is guaranteed to fit in a 32-bit integer.
+
+````
+Input: nums = [1,2,4,6]
+
+Output: [48,24,12,8]
+````
+
+#### Java Solutions
+- [BruteForce.java](./ArraysAndHashing/Java/ProductOfArrayExceptSelf/BruteForce.java)
+  A Brute-Force approach -> Time: O(n^2); Space: O(n)
+
+- [PrefixSuffixMultiplication.java](./ArraysAndHashing/Java/ProductOfArrayExceptSelf/PrefixSuffixMultiplication.java)
+  A Prefix-Suffix approach -> Time: O(n); Space: O(n)
+
+- [PrefixSuffixMultiplicationInPlace.java](./ArraysAndHashing/Java/ProductOfArrayExceptSelf/PrefixSuffixMultiplicationInPlace.java)
+  An Optimized Prefix-Suffix approach -> Time: O(n); Space: O(n)
+
+The link to the [manual.](https://drive.google.com/file/d/1AVB0597VD-YgVtWv7MD8EGjEDMoTNmmP/view?usp=sharing)
+
+**A key insight: If intuition tells you to "slice" the original array, think how you can optimize the solution with additional data structures. Also, any time you’re chaining multiplications and might have to multiply “nothing” (an empty sequence), 1 is the correct neutral starting value. For example, the product of the elements to the left of the very first element in an array is an empty set; if you start with 1, the first element's final product will be correct. The same logic applies to the last element's suffix product.**
+
+----------
+
+### Q17.
