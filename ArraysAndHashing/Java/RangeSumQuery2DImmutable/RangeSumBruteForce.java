@@ -12,10 +12,10 @@
 
 package Java.RangeSumQuery2DImmutable;
 
-public class BruteForce {
+public class RangeSumBruteForce {
   private int[][] matrix;
 
-  public BruteForce(int[][] matrix) {
+  public RangeSumBruteForce(int[][] matrix) {
     this.matrix = matrix;
   }
 
@@ -49,7 +49,7 @@ class NumMatrix {
         { 1, 0, 3, 0, 5 }
     };
 
-    BruteForce bf = new BruteForce(mat);
+    RangeSumBruteForce bf = new RangeSumBruteForce(mat);
 
     int sum1 = bf.sumRegion(2, 1, 4, 3); // return 8 (i.e sum of the red rectangle)
     int sum2 = bf.sumRegion(1, 1, 2, 2); // return 11 (i.e sum of the green rectangle)

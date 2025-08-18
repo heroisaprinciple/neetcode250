@@ -15,9 +15,10 @@
 
 package Java.RangeSumQuery2DImmutable;
 
-public class 2DPrefixSum {
+public class PrefixSum2D {
   private int[][] sumMat;
-  public 2DPrefixSum(int[][] matrix) {
+
+  public PrefixSum2D(int[][] matrix) {
     int rows = matrix.length;
     int cols = matrix[0].length;
     sumMat = new int[rows][cols];
@@ -40,7 +41,8 @@ public class 2DPrefixSum {
 
   public int sumRegion(int row1, int col1, int row2, int col2) {
     // we need to check if those areas even exist
-    // If we don't do it, the testcase ["NumMatrix","sumRegion"] [[[[1]]],[0,0,0,0]] -> expected: [null,1]
+    // If we don't do it, the testcase ["NumMatrix","sumRegion"] [[[[1]]],[0,0,0,0]]
+    // -> expected: [null,1]
     // fails as it would return nothing
     int A = sumMat[row2][col2]; // always exists
     int B = (row1 > 0) ? sumMat[row1 - 1][col2] : 0;
@@ -53,7 +55,7 @@ public class 2DPrefixSum {
   }
 }
 
-class NumMatrix {
+class Matrix {
   public static void main(String[] args) {
     // CAN'T PASS MATRIX DIRECTLY
     // BruteForce br = new BruteForce({
@@ -72,11 +74,11 @@ class NumMatrix {
         { 1, 0, 3, 0, 5 }
     };
 
-    BruteForce bf = new BruteForce(mat);
+    PrefixSum2D prefsum = new PrefixSum2D(mat);
 
-    int sum1 = bf.sumRegion(2, 1, 4, 3); // return 8 (i.e sum of the red rectangle)
-    int sum2 = bf.sumRegion(1, 1, 2, 2); // return 11 (i.e sum of the green rectangle)
-    int sum3 = bf.sumRegion(1, 2, 2, 4); // return 12 (i.e sum of the blue rectangle)
+    int sum1 = prefsum.sumRegion(2, 1, 4, 3); // return 8 (i.e sum of the red rectangle)
+    int sum2 = prefsum.sumRegion(1, 1, 2, 2); // return 11 (i.e sum of the green rectangle)
+    int sum3 = prefsum.sumRegion(1, 2, 2, 4); // return 12 (i.e sum of the blue rectangle)
 
     System.out.println(sum1);
     System.out.println(sum2);

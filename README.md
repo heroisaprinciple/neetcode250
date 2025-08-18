@@ -425,12 +425,12 @@ Output: [null, 8, 11, 12]
 
 #### Java Solutions
 
-- [BruteForce.java](ArraysAndHashing/Java/RangeSumQuery2DImmutable/BruteForce.java)
+- [RangeSumBruteForce.java](ArraysAndHashing/Java/RangeSumQuery2DImmutable/RangeSumBruteForce.java)
   Time: O(n * m); Space: O(1),
     - n is the n or rows;
     - m is the n of columns;
 
-- [2DPrefixSum.java](ArraysAndHashing/Java/RangeSumQuery2DImmutable/2DPrefixSum.java)
+- [2DPrefixSum.java](ArraysAndHashing/Java/RangeSumQuery2DImmutable/PrefixSum2D.java)
   Time: O(1); Space: O(n * m), where:
     - n is the n of rows;
     - m is the n of cols;
@@ -470,4 +470,80 @@ The link to the [manual.](https://drive.google.com/file/d/1AVB0597VD-YgVtWv7MD8E
 
 ----------
 
-### Q17.
+### Q17. Valid Sudoku
+
+You are given a 9 x 9 Sudoku board board. A Sudoku board is valid if the following rules are followed:
+
+Each row must contain the digits 1-9 without duplicates.
+Each column must contain the digits 1-9 without duplicates.
+Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without duplicates.
+Return ```true``` if the Sudoku board is valid, otherwise return false
+
+<i>Note: A board does not need to be full or be solvable to be valid.</i>
+
+````
+Input: board =
+[["1","2",".",".","3",".",".",".","."],
+ ["4",".",".","5",".",".",".",".","."],
+ [".","9","8",".",".",".",".",".","3"],
+ ["5",".",".",".","6",".",".",".","4"],
+ [".",".",".","8",".","3",".",".","5"],
+ ["7",".",".",".","2",".",".",".","6"],
+ [".",".",".",".",".",".","2",".","."],
+ [".",".",".","4","1","9",".",".","8"],
+ [".",".",".",".","8",".",".","7","9"]]
+
+Output: true
+
+Input: board =
+[["1","2",".",".","3",".",".",".","."],
+ ["4",".",".","5",".",".",".",".","."],
+ [".","9","1",".",".",".",".",".","3"],
+ ["5",".",".",".","6",".",".",".","4"],
+ [".",".",".","8",".","3",".",".","5"],
+ ["7",".",".",".","2",".",".",".","6"],
+ [".",".",".",".",".",".","2",".","."],
+ [".",".",".","4","1","9",".",".","8"],
+ [".",".",".",".","8",".",".","7","9"]]
+
+Output: false
+````
+
+**Constraints:**
+
+- board.length == 9
+- board[i].length == 9
+- board[i][j] is a digit 1-9 or '.'.
+
+### Java Solutions
+
+- [SudokuBruteForce.java](./ArraysAndHashing/Java/ValidSudoku/SudokuBruteForce.java)
+  A Brute-Force approach ->
+  - Time: O(n^2) => O(1)
+  - Space: O(n) => O(1)
+
+- [SudokuOnePass.java](./ArraysAndHashing/Java/ValidSudoku/SudokuOnePass.java)
+  A One-Pass approach ->
+  - Time: O(n^2) => O(1)
+  - Space: O(n) => O(1)
+
+The link to the [manual.](https://drive.google.com/file/d/1uNUQh5t8S-P6tlWnIbTOO5DdJnDq-LF4/view?usp=sharing)
+
+**A key insight: always think how we can utilize additional strings in similar problems. Think how we can change 3 pass to 1 pass algo. Use the optimized
+approach when complex state can be encoded as strings
+and when we eant to avoid overhead like
+complex data structures or a lot of nested loops.
+Ask yourself: "Can I encode my complex state into a unique string key?"**
+
+````
+// Instead of complex nested data structures:
+Map<Integer, Map<Integer, Set<String>>> complex = new HashMap<>();
+
+// Use simple string encoding:
+Set<String> seen = new HashSet<>();
+seen.add(value + "-constraint1-" + param1 + "-constraint2-" + param2);
+````
+
+----------------
+
+### Q18.
