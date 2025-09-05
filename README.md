@@ -515,7 +515,7 @@ Output: false
 - board[i].length == 9
 - board[i][j] is a digit 1-9 or '.'.
 
-### Java Solutions
+#### Java Solutions
 
 - [SudokuBruteForce.java](./ArraysAndHashing/Java/ValidSudoku/SudokuBruteForce.java)
   A Brute-Force approach ->
@@ -546,4 +546,30 @@ seen.add(value + "-constraint1-" + param1 + "-constraint2-" + param2);
 
 ----------------
 
-### Q18.
+### Q18. Longest Consecutive Sequence
+
+Given an array of integers nums, return the length of the longest consecutive sequence of elements that can be formed.
+
+A consecutive sequence is a sequence of elements in which each element is exactly 1 greater than the previous element. The elements do not have to be consecutive in the original array.
+
+You must write an algorithm that runs in O(n) time.
+
+````
+Input: nums = [2,20,4,10,3,4,5]
+
+Output: 4
+
+````
+
+Explanation: The longest consecutive sequence is [2, 3, 4, 5].
+
+### Java Solutions
+
+- [LongestConsecSeq.java](./ArraysAndHashing/Java/LongestConsecutiveSequence/LongestConsecSeq.java)
+  An optimized solution using hashsets ->
+  - Time: O(n);
+  - Space: O(n)
+
+___________
+
+Q19.
