@@ -608,3 +608,50 @@ The link to the [manual.](https://drive.google.com/file/d/1nVxg2jCYQpe_uhfuPasyx
 **Key insight: Greedy Algos are used when:**
 - **"Unlimited walks"**
 - **"One at a time; Local -> Global"**
+
+--------------
+
+### Q20. Majority Element II
+
+You are given an integer array nums of size n, find all elements that appear more than ⌊ n/3 ⌋ times. You can return the result in any order.
+
+````
+Example 1:
+
+Input: nums = [5,2,3,2,2,2,2,5,5,5]
+
+Output: [2,5]
+Example 2:
+
+Input: nums = [4,4,4,4,4]
+
+Output: [4]
+Example 3:
+
+Input: nums = [1,2,3]
+
+Output: []
+````
+
+#### Java Solution
+- [MajorityElIIMooresVoting.java](./ArraysAndHashing/Java/MajorityElementII/MajorityElIIMooresVoting.java);
+  Time: O(n); Space: O(1)
+
+Manuals:
+- [Moore's Voting Algo in Majority El I.](https://drive.google.com/file/d/1iRZ8LOjcMmCltP-ZCrsLiUJTlAmRjMYq/view?usp=sharing)
+
+- [Moore's Voting Algo in Majority El II.](https://drive.google.com/file/d/15rMBbRaTOlz79mdJqHnbdVYqlLvmoWex/view?usp=sharing)
+
+#### Comparison with the Majority El I problem.
+
+<i>"If anyone is confused as to why are we manually checking, we are doing it because it is not guarenteed in the question that there are 2 majority elements, there can be 0,1 or 2 majority elements"</i>
+
+Coming from this [video.](https://www.youtube.com/watch?v=vwZj1K0e9U8)
+
+We don't do the second pass in Maj El I problem as that problem states:
+**"You may assume that the majority element always exists in the array."**
+
+
+----
+
+### Q21.
