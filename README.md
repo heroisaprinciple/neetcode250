@@ -640,7 +640,7 @@ Output: []
 Manuals:
 - [Moore's Voting Algo in Majority El I.](https://drive.google.com/file/d/1iRZ8LOjcMmCltP-ZCrsLiUJTlAmRjMYq/view?usp=sharing)
 
-- [Moore's Voting Algo in Majority El II.](https://drive.google.com/file/d/15rMBbRaTOlz79mdJqHnbdVYqlLvmoWex/view?usp=sharing)
+- [Moore's Voting Algo in Majority El II.](https://drive.google.com/file/d/1b0bTySWxfrjOUx153dByVG0RBx3LZ6Tp/view?usp=sharing)
 
 #### Comparison with the Majority El I problem.
 

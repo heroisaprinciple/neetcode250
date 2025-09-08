@@ -67,13 +67,13 @@ public class MajorityElIIMooresVoting {
     List<Integer> occurrences = new ArrayList<Integer>();
     if (count1 > nums.length / 3)
       occurrences.add(el1);
-    else if (count2 > nums.length / 3)
+    if (count2 > nums.length / 3)
       occurrences.add(el2);
 
     return occurrences;
   }
 
-  private static void printArr(List<Integer> nums) {
+  static void printArr(List<Integer> nums) {
     for (int num : nums) {
       System.out.println(num);
     }
