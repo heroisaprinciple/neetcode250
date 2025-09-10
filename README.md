@@ -654,4 +654,37 @@ We don't do the second pass in Maj El I problem as that problem states:
 
 ----
 
+### Q21. Subarray Sum Equals K
+
+You are given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+````
+Example 1:
+
+Input: nums = [2,-1,1,2], k = 2
+
+Output: 4
+Explanation: [2], [2,-1,1], [-1,1,2], [2] are the subarrays whose sum is equals to k.
+
+Example 2:
+
+Input: nums = [4,4,4,4,4,4], k = 4
+
+Output: 6
+````
+
+#### Java Solution
+
+- [SubarraySumEqKBruteForce.java](./ArraysAndHashing/Java/SubarraySumEqualsK/SubarraySumEqKBruteForce.java);
+  Time: O(n^2); Space: O(1)
+
+- [SubarraySumEqKPrefixSum.java](./ArraysAndHashing/Java/SubarraySumEqualsK/SubarraySumEqKPrefixSum.java);
+  Time: O(n); Space: O(n);
+
+The link to the [manual.](https://drive.google.com/file/d/1kbAxkeZG1V9x6OdT5cjOWZTnzdXP2drX/view?usp=sharing)
+
+__________
+
 ### Q21.
