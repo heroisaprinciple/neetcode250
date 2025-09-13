@@ -687,4 +687,41 @@ The link to the [manual.](https://drive.google.com/file/d/1kbAxkeZG1V9x6OdT5cjOW
 
 __________
 
-### Q21.
+### Q22. First Missing Positive
+
+You are given an unsorted integer array nums. Return the smallest positive integer that is not present in nums.
+
+**You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.**
+
+Example:
+
+````
+Example 1:
+
+Input: nums = [-2,-1,0]
+
+Output: 1
+Example 2:
+
+Input: nums = [1,2,4]
+
+Output: 3
+Example 3:
+
+Input: nums = [1,2,4,5,6,3,1]
+
+Output: 7
+````
+
+#### Java Solution
+- [FirstMissingPositiveValueBruteForce.java](./ArraysAndHashing/Java/FirstMissingPositive/FirstMissingPositiveValueBruteForce.java);
+Time: O(n); Space: O(n);
+
+- [FirstMissingPositiveValueOptimal.java](./ArraysAndHashing/Java/FirstMissingPositive/FirstMissingPositiveValueOptimal.java);
+Time: O(n); Space: O(1)
+
+**Key insight: If there is a hashset or a hasmap in a brute-force solution,try to think on how we can change the initial array, so it would serve as a pointer system to reduce space complexity.**
+
+The link to the [manual.](https://drive.google.com/file/d/1NVnUsxikWm9oPEiqsiDVHk10kWu3N8aD/view?usp=sharing)
+
+---------------
