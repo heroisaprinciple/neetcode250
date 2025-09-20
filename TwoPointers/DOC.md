@@ -138,3 +138,43 @@ Output: "aabbbxxc"
 **Key Takeaway: Always protect character access with bounds checks (if (i < word.length())) if your loop could exceed the shorter string's length. Loop condition i < n || i < m means you must guard both strings individually. It is different with && condition.**
 
 ----------
+
+### Q5. Merge Sorted Array
+
+You are given two integer arrays `nums1` and `nums2`, both sorted in non-decreasing order, along with two integers `m` and `n`, where:
+
+`m` is the number of valid elements in `nums1`,
+`n` is the number of elements in `nums2`.
+The array `nums1` has a total length of `(m+n)`, with the first `m` elements containing the values to be merged, and the last `n` elements set to 0 as placeholders.
+
+Your task is to merge the two arrays such that the final merged array is also sorted in non-decreasing order and stored entirely within `nums1`.
+You must modify `nums1` in-place and do not return anything from the function.
+
+````
+Example 1:
+
+Input: nums1 = [10,20,20,40,0,0], m = 4, nums2 = [1,2], n = 2
+
+Output: [1,2,10,20,20,40]
+Example 2:
+
+Input: nums1 = [0,0], m = 0, nums2 = [1,2], n = 2
+
+Output: [1,2]
+````
+
+#### Solution
+
+- [MergeSortedArrayBruteForce.java](MergeSortedArray/MergeSortedArrayBruteForce.java);
+  Time: O(m + n); Space: O(m + n);
+  - m is the length of arr1
+  - n is the length of arr2
+
+- [MergeSortedArraySpaceOptimal.java](MergeSortedArray/MergeSortedArraySpaceOptimal.java);
+  Time: O(m + n); Space: O(1);
+  - m is the length of arr1
+  - n is the length of arr2
+
+The link to the [manual.](https://drive.google.com/file/d/1ciZWDS14MwfrtgFaJiHvgdzYrBBxS7m0/view?usp=sharing)
+
+-------

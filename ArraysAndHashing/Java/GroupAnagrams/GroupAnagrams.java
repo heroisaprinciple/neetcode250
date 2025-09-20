@@ -38,6 +38,8 @@ class GroupAnagram {
       }
       anagrams.get(sorted).add(word);
     }
+    // anagrams.values() returns a list of values (that are lists)
+    // ArrayList will simply convert this collection
     return new ArrayList<>(anagrams.values());
   }
 
