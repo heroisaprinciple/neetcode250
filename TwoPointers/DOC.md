@@ -134,6 +134,7 @@ Output: "aabbbxxc"
   - m is the length of word1
   - n is the length of word2
 
+The link to the [manual.](https://drive.google.com/file/d/1LcTfkY0UUI9gguXbRfb9Rw5Td7udO2Vi/view?usp=sharing)
 
 **Key Takeaway: Always protect character access with bounds checks (if (i < word.length())) if your loop could exceed the shorter string's length. Loop condition i < n || i < m means you must guard both strings individually. It is different with && condition.**
 
@@ -216,3 +217,34 @@ Explanation: You should return k = 3 as we have three unique elements.
 The link to the [manual.](https://drive.google.com/file/d/1WYlplnlo-JzYHlzHOw88yR_twTkOlHQz/view?usp=sharing)
 
 ------
+
+### Q7. Two Integer Sum II
+
+Given an array of integers numbers that is sorted in non-decreasing order.
+
+Return the indices (1-indexed) of two numbers, `[index1, index2]`, such that they add up to a given target number and `index1 < index2`. Note that `index1` and `index2` cannot be equal, therefore you may not use the same element twice.
+
+There will always be exactly one valid solution.
+
+**Your solution must use O(1) additional space.**
+
+````
+Example 1:
+
+Input: numbers = [1,2,3,4], target = 3
+
+Output: [1,2]
+Explanation:
+The sum of 1 and 2 is 3. Since we are assuming a 1-indexed array, index1 = 1, index2 = 2. We return [1, 2].
+````
+
+#### Solution
+- [TwoIntsSumIIBruteForce.java](TwoIntegerSumII/TwoIntsSumIIBruteForce.java);
+  Time: O(n^2); Space: O(1);
+
+- [TwoIntegerSumII/TwoIntsSumIIOptimal.java](TwoIntegerSumII/TwoIntsSumIIOptimal.java);
+  Time: O(n); Space: O(1)
+
+The link to the [manual.](https://drive.google.com/file/d/1U-A4oztwh0-tBZvIbQd3CPziNu9WNbTl/view?usp=sharing)
+
+--------
