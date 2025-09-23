@@ -222,7 +222,7 @@ The link to the [manual.](https://drive.google.com/file/d/1WYlplnlo-JzYHlzHOw88y
 
 Given an array of integers numbers that is sorted in non-decreasing order.
 
-Return the indices (1-indexed) of two numbers, `[index1, index2]`, such that they add up to a given target number and `index1 < index2`. Note that `index1` and `index2` cannot be equal, therefore you may not use the same element twice.
+Return the indices (1-indexed) of two numbers, `[index1, index2]`, such that they add up to a given target number and `index1 < index2`. **Note that `index1` and `index2` cannot be equal, therefore you may not use the same element twice.**
 
 There will always be exactly one valid solution.
 
@@ -248,3 +248,37 @@ The sum of 1 and 2 is 3. Since we are assuming a 1-indexed array, index1 = 1, in
 The link to the [manual.](https://drive.google.com/file/d/1U-A4oztwh0-tBZvIbQd3CPziNu9WNbTl/view?usp=sharing)
 
 --------
+
+
+### Q8. 3Sum
+
+Given an integer array nums, return all the triplets `[nums[i], nums[j], nums[k]]`,
+where `nums[i] + nums[j] + nums[k] == 0`, and the indices i, j and k are all distinct.
+
+**The output should not contain any duplicate triplets. You may return the output and the triplets in any order.**
+
+````
+Example 1:
+
+Input: nums = [-1,0,1,2,-1,-4]
+
+Output: [[-1,-1,2],[-1,0,1]]
+
+Explanation:
+nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
+nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
+nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
+The distinct triplets are [-1,0,1] and [-1,-1,2].
+````
+
+#### Solution
+
+- [ThreeSumBruteForce.java](ThreeSum/ThreeSumBruteForce.java);
+  Time: O(n^3); Space: O(m), where m is the n of unique triplets;
+
+- [ThreeSumOptimal.java](ThreeSum/ThreeSumOptimal.java);
+  Time: O(n^2); Space: O(m), where m is the n of unique triplets;
+
+The link to the [manual.](https://drive.google.com/file/d/1cMu3L2e-3SGfp4hSSwkb3Ofy6f2fQIX2/view?usp=sharing)
+
+----
