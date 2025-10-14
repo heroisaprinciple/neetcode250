@@ -282,3 +282,35 @@ The distinct triplets are [-1,0,1] and [-1,-1,2].
 The link to the [manual.](https://drive.google.com/file/d/1cMu3L2e-3SGfp4hSSwkb3Ofy6f2fQIX2/view?usp=sharing)
 
 ----
+
+
+### Q9. 4Sum
+
+You are given an integer array nums of size n, return an array of all the **unique quadruplets** [nums[a], nums[b], nums[c], nums[d]] such that:
+
+- 0 <= a, b, c, d < n
+- a, b, c, and d are distinct.
+- nums[a] + nums[b] + nums[c] + nums[d] == target
+
+You may return the answer in any order.
+
+**Note: [1,0,3,2] and [3,0,1,2] are considered as same quadruplets.**
+
+````
+Example 1:
+
+Input: nums = [3,2,3,-3,1,0], target = 3
+
+Output: [[-3,0,3,3],[-3,1,2,3]]
+````
+
+#### Solution
+
+- [FourSumOptimal.java](FourSum/FourSumOptimal.java);
+  Time: O(n^3); Space: O(m), where m is the n of unique quadruplets;
+
+The link to the [manual.](https://drive.google.com/file/d/1cF2gHp2BDBX0I4KRuebs0KYb1WFxPTSi/view?usp=sharing)
+
+**Key insight: ALWAYS think about duplicates. Skip them in problems as this one.**
+
+------
