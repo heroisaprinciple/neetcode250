@@ -14,3 +14,7 @@ All information regarding Chapter 1 can be found in the DOC [here.](ArraysAndHas
 ## Chapter 2. Two Pointers
 
 All information regarding Chapter 2 can be found in the DOC [here.](TwoPointers/DOC.md)
+
+## Chapter 3. Stacks
+
+All information regarding Chapter 3 can be found in the DOC [here.](Stacks/DOC.md)
