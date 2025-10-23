@@ -18,3 +18,7 @@ All information regarding Chapter 2 can be found in the DOC [here.](TwoPointers/
 ## Chapter 3. Stacks
 
 All information regarding Chapter 3 can be found in the DOC [here.](Stacks/DOC.md)
+
+## Chapter 4. Binary Search
+
+All information regarding Chapter 4 can be found in the DOC [here.](BinarySearch/DOC.md)
