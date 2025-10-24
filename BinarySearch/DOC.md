@@ -39,6 +39,39 @@ Output: -1
   This solution uses a built-in `Arrays.binarySearch(arr, t)` method;
   Time: O(log n); Space: O(1)
 
+The link to the [manual.](https://drive.google.com/file/d/1nTQQmTgUPSmdqwPS8F44FGJaRnoAluYA/view?usp=sharing)
+
 **Key insight: An array should always be sorted.**
 
 ____________
+
+### Search Insert Position
+
+You are given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+````
+Example 1:
+
+Input: nums = [-1,0,2,4,6,8], target = 5
+
+Output: 4
+Example 2:
+
+Input: nums = [-1,0,2,4,6,8], target = 10
+
+Output: 6
+````
+
+#### Solution
+
+- [BinSearch.java](./SearchInsertPosition/BinSearch.java);
+  Time: O(log n); Space: O(1)
+
+The link to the [manual.](https://drive.google.com/file/d/1veQmMQtjfvcJzcUglxbMbxBK4wTXN1DB/view?usp=sharing)
+
+The video referenced:
+- [Search Insert Position.](https://www.youtube.com/watch?v=HOvFyOJGKig)
+
+------------
