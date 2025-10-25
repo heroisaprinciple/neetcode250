@@ -75,3 +75,36 @@ The video referenced:
 - [Search Insert Position.](https://www.youtube.com/watch?v=HOvFyOJGKig)
 
 ------------
+
+### Guess Number Higher Or Lower
+
+We are playing the Guess Game. The game is as follows:
+
+I pick a number from 1 to n. You have to guess which number I picked.
+
+Every time you guess wrong, I will tell you whether the number I picked is higher or lower than your guess.
+
+**You call a pre-defined API int guess(int num), which returns three possible results:**
+
+- 0: your guess is equal to the number I picked (i.e. num == pick).
+- -1: Your guess is higher than the number I picked (i.e. num > pick).
+- 1: Your guess is lower than the number I picked (i.e. num < pick).
+- Return the number that I picked.
+
+**(In the original leetcode problem, int guess(int num)) is hidden.**
+
+Example 1:
+
+````
+Input: n = 5, pick = 3
+
+Output: 3
+````
+#### Solution
+
+- [GuessNumHigherOrLower.java](./GuessNumber/GuessNumHigherOrLower.java);
+  Time: O(log n), Space: O(1)
+
+The link to the [manual.](https://drive.google.com/file/d/1PmhyQ9DSFPjj00ZOY0IsdxIZvZ4kPUhA/view?usp=sharing)
+
+____________
