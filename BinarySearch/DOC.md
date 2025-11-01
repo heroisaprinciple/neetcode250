@@ -108,3 +108,36 @@ Output: 3
 The link to the [manual.](https://drive.google.com/file/d/1PmhyQ9DSFPjj00ZOY0IsdxIZvZ4kPUhA/view?usp=sharing)
 
 ____________
+
+### Sqrt(x)
+
+You are given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
+
+You must not use any built-in exponent function or operator.
+
+<i>For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.</i>
+
+````
+Example 1:
+
+Input: x = 9
+
+Output: 3
+Example 2:
+
+Input: x = 13
+
+Output: 3
+````
+
+#### Solution
+
+- [Sqrt.java](./Sqrt/Sqrt.java);
+  Brute-Force solution, Time: O(sqrt(n)); Space: O(1)
+
+- [SqrtBinSearch.java](./Sqrt/SqrtBinSearch.java);
+  Bin Search solution; Time: O(log n); Space: O(1)
+
+The link to the [manual.](https://drive.google.com/file/d/1sbdgvpHE2a12RNYxu4sxvdIsARo09yrZ/view?usp=sharing)
+
+--------------
